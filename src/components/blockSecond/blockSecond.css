@@ -1,0 +1,68 @@
+.list-levels{
+    margin-top: 20px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 20px;
+}
+
+.level{
+    padding: 10px;
+    position: relative;
+}
+
+.level:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 94%);
+}
+
+.level_active{
+    background-color: hsl(40, 13%, 14%);
+}
+
+.level_active:hover{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.level_passed{
+    color: hsl(120, 100%, 25%);
+}
+
+.level:before {
+    content: '\2713';
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-right: 10px;
+}
+
+.iconHelp{
+    color: hsl(36, 17%, 11%);
+    font-size: 22px;
+}
+
+.iconHelp_passed{
+    color: hsl(120, 100%, 25%);
+}
+
+.level_passed:before{
+    color: hsl(120, 100%, 25%);
+}
+
+.button-reset, .help{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid hsl(0, 0%, 100%);
+    background-color: hsl(36, 17%, 11%);
+    color: hsla(0, 0%, 100%, 0.6);
+    outline: hsla(0, 0%, 100%, 0.5) solid 1px;
+    outline-offset: 0;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button-reset:hover, .help:hover{
+    border: 2px solid;
+    outline-color: hsla(0, 0%, 100%, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px hsl(198, 35%, 40%);
+    cursor: pointer;
+}

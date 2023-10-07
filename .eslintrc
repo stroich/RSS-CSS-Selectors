@@ -1,0 +1,43 @@
+{
+    "extends": [
+        "airbnb-typescript/base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "prettier",
+        "@typescript-eslint",
+        "import",
+        "jest-dom"
+    ],
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "root": true,
+    "rules": {
+        "jest-dom/prefer-checked": "error",
+        "jest-dom/prefer-enabled-disabled": "error",
+        "jest-dom/prefer-required": "error",
+        "jest-dom/prefer-to-have-attribute": "error",
+        "@typescript-eslint/no-explicit-any": "error",
+        "no-debugger": "off",
+        "no-console": 0,
+        "class-methods-use-this": "off",
+        "import/no-extraneous-dependencies": ["error", {"optionalDependencies": true}],
+        "prettier/prettier": [
+            "error",
+            {
+              "endOfLine": "auto"
+            }
+          ]
+    }
+}

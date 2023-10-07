@@ -1,0 +1,131 @@
+.task{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pizza{
+    margin: 0 auto;
+    background-image: url("../../assets/pizza.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.pizza_4el{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 30% 30%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.pizza_6el{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 30% 30%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.pizza_active {
+    filter: drop-shadow(0 0 0.75rem hsl(0, 0%, 50%));
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateActive {
+    0% {
+        transform: rotate(0deg) scale(1.2) ;
+    }
+    100% {
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+.elPizza{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    transition: filter 1s, opacity 3s;
+}
+
+.elPizza_correct{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    transition: filter 1s, opacity 2s;
+    animation: 3s linear 0s normal none infinite running rotate;
+}
+
+.htmlCode{
+    position: absolute;
+    background-color: hsl(0, 0%, 94%);
+    padding: 5px 10px;
+    width: 170px;
+    margin-left: 45px;
+    margin-top: 8px;
+    vertical-align: 50px;
+    text-align: center;
+    z-index: 900;
+}
+
+.redTomato {
+    background-image: url("../../assets/tomatoR.png");
+}
+
+.redTomato-small{
+    background-image: url("../../assets/tomatoR.png");
+    width: 30px;
+    height: 30px;
+}
+
+.yellowTomato{
+    background-image: url("../../assets/tomatoY.png");
+}
+
+.yellowTomato-small{
+    background-image: url("../../assets/tomatoY.png");
+    width: 30px;
+    height: 30px;
+}
+
+.rottenRedTomato{
+    background-image: url("../../assets/tomatoRedRotten.png");
+}
+
+.rottenYellowTomato{
+    background-image: url("../../assets/tomatoYellowRotten.png");
+}
+
+.sausage{
+    background-image: url("../../assets/sausage.png");
+}
+
+.item_active{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 0.75rem hsl(0, 0%, 0%));
+    z-index: 100;
+}
+
+.elPizza_correct.item_active{
+    animation: none;
+}
+

@@ -1,0 +1,16 @@
+.elMarkup, .elMarkup-pizza{
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 1rem;
+    padding: 6px 15px;
+    cursor: default;
+    transition: 0.7s;
+}
+
+.elMarkup:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.hover{
+    color: hsl(0, 0%, 100%);
+}
+
